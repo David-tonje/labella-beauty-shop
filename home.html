@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABELLA - Where Beauty Lies</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">LABELLA</a>
+            <span>Where Beauty Lies</span>
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="shop.php"><i class="fas fa-store"></i> Shop</a></li>
+            <li><a href="cart.php"><i class="fas fa-shopping-cart"></i> Cart (0)</a></li>
+            <li><a href="logout.php"><i class="fas fa-user"></i> Logout</a></li>
+        </ul>
+        <!-- Menu toggle for small screens -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><i class="fas fa-heart"></i> Welcome to LABELLA <i class="fas fa-heart"></i></h1>
+        <p>Discover the best in cosmetics, fashion, and more.</p>
+        <a href="shop.php" class="shop-now-btn">
+            <i class="fas fa-bag-shopping"></i> Shop Now
+        </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 LABELLA. All rights reserved. <i class="fas fa-kiss-wink-heart"></i></p>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('nav ul');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
